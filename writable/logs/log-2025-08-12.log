@@ -1,0 +1,361 @@
+ERROR - 2025-08-12 10:43:48 --> mysqli_sql_exception: Duplicate entry 'electronics' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', NULL, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\eticaret-staj\app\Database\Seeds\CategorySeeder.php(55): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Database\Seeder.php(149): App\Database\Seeds\CategorySeeder->run()
+#7 C:\xampp\htdocs\eticaret-staj\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\eticaret-staj\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\eticaret-staj\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\eticaret-staj\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\eticaret-staj\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-08-12 10:46:17 --> mysqli_sql_exception: Duplicate entry 'iphone-15-pro-max' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(1841): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', NULL, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2230): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampp\htdocs\eticaret-staj\app\Database\Seeds\ProductSeeder.php(122): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Database\Seeder.php(149): App\Database\Seeds\ProductSeeder->run()
+#7 C:\xampp\htdocs\eticaret-staj\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\xampp\htdocs\eticaret-staj\system\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run(Array)
+#9 C:\xampp\htdocs\eticaret-staj\system\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#10 C:\xampp\htdocs\eticaret-staj\system\Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 C:\xampp\htdocs\eticaret-staj\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-08-12 10:59:08 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 10:59:08 --> Product save error: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:16:19 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:16:19 --> Product save error: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:20:51 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:20:51 --> Product save error: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:34 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:34 --> Product insert attempt 1 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:34 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:34 --> Product insert attempt 2 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:34 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:34 --> Product insert attempt 3 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:34 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:34 --> Product insert attempt 4 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:34 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:28:34 --> Product save error: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:51 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:51 --> Product insert attempt 1 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:51 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:51 --> Product insert attempt 2 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:51 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:51 --> Product insert attempt 3 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:51 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+WARNING - 2025-08-12 11:28:51 --> Product insert attempt 4 failed: Duplicate entry '' for key 'slug'
+ERROR - 2025-08-12 11:28:51 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(100): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:28:51 --> Product save error: Duplicate entry '' for key 'slug'
+DEBUG - 2025-08-12 11:35:42 --> Generated unique slug: asus-tuf-gaming-laptop-1754998542-696
+DEBUG - 2025-08-12 11:35:42 --> Attempting to insert product with slug: asus-tuf-gaming-laptop-1754998542-696
+ERROR - 2025-08-12 11:35:42 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:35:42 --> Product save error: Duplicate entry '' for key 'slug'
+DEBUG - 2025-08-12 11:35:54 --> Generated unique slug: msi-ultra-mechanical-keyboard-232-1754998554-821
+DEBUG - 2025-08-12 11:35:54 --> Attempting to insert product with slug: msi-ultra-mechanical-keyboard-232-1754998554-821
+ERROR - 2025-08-12 11:35:54 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:35:54 --> Product save error: Duplicate entry '' for key 'slug'
+DEBUG - 2025-08-12 11:35:59 --> Generated unique slug: msi-ultra-mechanical-keyboard-232-1754998559-617
+DEBUG - 2025-08-12 11:35:59 --> Attempting to insert product with slug: msi-ultra-mechanical-keyboard-232-1754998559-617
+ERROR - 2025-08-12 11:35:59 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:35:59 --> Product save error: Duplicate entry '' for key 'slug'
+DEBUG - 2025-08-12 11:36:02 --> Generated unique slug: razer-gaming-wireless-mouse-309-1754998562-480
+DEBUG - 2025-08-12 11:36:02 --> Attempting to insert product with slug: razer-gaming-wireless-mouse-309-1754998562-480
+ERROR - 2025-08-12 11:36:02 --> mysqli_sql_exception: Duplicate entry '' for key 'slug' in C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\eticaret-staj\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\eticaret-staj\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\eticaret-staj\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\eticaret-staj\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\eticaret-staj\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\eticaret-staj\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\eticaret-staj\app\Controllers\ProductController.php(96): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(933): App\Controllers\ProductController->save()
+#9 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 C:\xampp\htdocs\eticaret-staj\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\eticaret-staj\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\eticaret-staj\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\eticaret-staj\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+ERROR - 2025-08-12 11:36:02 --> Product save error: Duplicate entry '' for key 'slug'
+DEBUG - 2025-08-12 11:47:38 --> Generated unique slug: asus-ultra-headphones-707-1754999258-566
+DEBUG - 2025-08-12 11:47:38 --> Attempting to insert product with slug: asus-ultra-headphones-707-1754999258-566
+DEBUG - 2025-08-12 11:50:48 --> Generated unique slug: jbl-headphones-1754999448-388
+DEBUG - 2025-08-12 11:50:48 --> Attempting to insert product with slug: jbl-headphones-1754999448-388
+DEBUG - 2025-08-12 11:59:31 --> Generated unique slug: jbl-headphones-1754999971-648
+DEBUG - 2025-08-12 11:59:31 --> Attempting to insert product with slug: jbl-headphones-1754999971-648
+DEBUG - 2025-08-12 12:01:04 --> Generated unique slug: jbl-headphones-1755000064-786
+DEBUG - 2025-08-12 12:01:04 --> Attempting to insert product with slug: jbl-headphones-1755000064-786
+ERROR - 2025-08-12 12:04:37 --> Gemini validation failed: Gemini API error (HTTP 503): The model is overloaded. Please try again later.
+DEBUG - 2025-08-12 12:05:29 --> Generated unique slug: asus-tuf-gaming-laptop-1755000329-766
+DEBUG - 2025-08-12 12:05:29 --> Attempting to insert product with slug: asus-tuf-gaming-laptop-1755000329-766
+ERROR - 2025-08-12 12:39:54 --> Gemini search parsing failed: Gemini API error (HTTP 503): The model is overloaded. Please try again later.
+ERROR - 2025-08-12 16:07:27 --> Gemini validation failed: Gemini API error (HTTP 503): The model is overloaded. Please try again later.
+ERROR - 2025-08-12 16:07:31 --> Gemini validation failed: Gemini API error (HTTP 503): The model is overloaded. Please try again later.
+ERROR - 2025-08-12 16:15:41 --> Gemini search parsing failed: Gemini API error (HTTP 503): The model is overloaded. Please try again later.
