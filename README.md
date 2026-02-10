@@ -578,7 +578,7 @@ Bu staj projesi süresince kazanılan deneyimler, modern web development ve AI i
 ---
 
 **🔗 Demo URL**: `http://localhost/eticaret-staj/public/`
-**📅 Proje Tarihi**: Ocak 2025
+**📅 Proje Tarihi**: Temmuz 2025
 **🏷️ Versiyon**: 1.0.0
 **📝 Lisans**: MIT License
 
